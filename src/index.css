@@ -1,10 +1,32 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap');
 
+:root {
+  --background: #ffffff;
+  --surface: #f8f8f8;
+  --text-primary: #050505;
+  --text-secondary: #52525b;
+  --border-theme: rgba(0, 0, 0, 0.1);
+  --nav-bg: rgba(255, 255, 255, 0.8);
+}
+
+.dark {
+  --background: #050505;
+  --surface: #121212;
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --border-theme: rgba(255, 255, 255, 0.1);
+  --nav-bg: rgba(5, 5, 5, 0.8);
+}
+
 @theme {
   --color-primary: #FF2800;
-  --color-background: #EBEBEB;
-  --color-surface: #DCDCDC;
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-border-theme: var(--border-theme);
+  --color-nav-bg: var(--nav-bg);
   
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Syne", sans-serif;
@@ -12,12 +34,16 @@
 
 @layer base {
   body {
-    @apply bg-background text-zinc-600 font-sans antialiased;
+    @apply bg-background text-text-secondary font-sans antialiased transition-colors duration-300;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display text-zinc-950 font-extrabold tracking-tight;
+    @apply font-display text-text-primary font-extrabold tracking-tight;
   }
+}
+
+.title-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .glass {
