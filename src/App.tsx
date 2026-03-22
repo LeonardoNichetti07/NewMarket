@@ -340,9 +340,9 @@ export default function App() {
 
         {/* New Row for Warranty */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[400px] mt-6">
-          <div className="md:col-span-12 group relative overflow-hidden rounded-3xl service-card">
+          <div className="md:col-span-12 group relative overflow-hidden rounded-3xl service-card bg-surface min-h-[300px] md:min-h-0">
             <img 
-              src="https://drive.google.com/thumbnail?id=1dTT4de71p2Pg87Tbxw5dtfMifodaNiR2&sz=w2000" 
+              src="https://drive.google.com/thumbnail?id=1NfakFGnDVotJ5bACtApjPtyXgif40kiV&sz=w2000" 
               alt="Garantía New Market" 
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-75"
               referrerPolicy="no-referrer"
