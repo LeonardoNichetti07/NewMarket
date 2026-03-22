@@ -469,7 +469,7 @@ export default function App() {
 
                     <div className="mt-10 flex items-center gap-4">
                       <a 
-                        href="https://maps.app.goo.gl/benissuai-placeholder" 
+                        href="https://www.google.com/maps/search/?api=1&query=New+Market+Benissuai+Carrer+Benissuai+10+Gandia" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-text-primary text-background px-6 py-3 rounded-xl font-bold text-sm hover:bg-primary hover:text-white transition-all shadow-lg shadow-black/10"
@@ -493,7 +493,15 @@ export default function App() {
                 </div>
 
                 {/* Map Side */}
-                <div className="lg:col-span-7 h-[300px] lg:h-auto border-t lg:border-t-0 lg:border-l border-zinc-200 bg-zinc-100 relative">
+                <div 
+                  className="lg:col-span-7 h-[300px] lg:h-auto border-t lg:border-t-0 lg:border-l border-zinc-200 bg-zinc-100 relative cursor-pointer group/map"
+                  onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=New+Market+Benissuai+Carrer+Benissuai+10+Gandia", "_blank")}
+                >
+                  <div className="absolute inset-0 z-10 bg-black/0 group-hover/map:bg-black/5 transition-colors flex items-center justify-center">
+                    <div className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-xl opacity-0 group-hover/map:opacity-100 transition-all transform translate-y-2 group-hover/map:translate-y-0 flex items-center gap-2 text-xs font-bold text-text-primary">
+                      <MapPin size={14} className="text-primary" /> Abrir en Google Maps
+                    </div>
+                  </div>
                   <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.442894567439!2d-0.184333!3d38.966667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61e89333333333%3A0x3333333333333333!2sCarrer%20Benissuai%2C%2010%2C%2046702%20Gandia%2C%20Val%C3%A8ncia!5e0!3m2!1ses!2ses!4v1710000000000!5m2!1ses!2ses" 
                     width="100%" 
@@ -502,7 +510,7 @@ export default function App() {
                     allowFullScreen={true} 
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
-                    className="grayscale-[0.2] contrast-[1.1]"
+                    className="grayscale-[0.2] contrast-[1.1] pointer-events-none"
                   ></iframe>
                 </div>
               </div>
@@ -554,7 +562,7 @@ export default function App() {
 
                     <div className="mt-10 flex items-center gap-4">
                       <a 
-                        href="https://maps.app.goo.gl/republica-argentina-placeholder" 
+                        href="https://www.google.com/maps/search/?api=1&query=New+Market+Republica+Argentina+8+Gandia" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-text-primary text-background px-6 py-3 rounded-xl font-bold text-sm hover:bg-primary hover:text-white transition-all shadow-lg shadow-black/10"
@@ -578,7 +586,15 @@ export default function App() {
                 </div>
 
                 {/* Map Side */}
-                <div className="lg:col-span-7 h-[300px] lg:h-auto border-t lg:border-t-0 lg:border-l border-zinc-200 bg-zinc-100 relative">
+                <div 
+                  className="lg:col-span-7 h-[300px] lg:h-auto border-t lg:border-t-0 lg:border-l border-zinc-200 bg-zinc-100 relative cursor-pointer group/map"
+                  onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=New+Market+Republica+Argentina+8+Gandia", "_blank")}
+                >
+                  <div className="absolute inset-0 z-10 bg-black/0 group-hover/map:bg-black/5 transition-colors flex items-center justify-center">
+                    <div className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-xl opacity-0 group-hover/map:opacity-100 transition-all transform translate-y-2 group-hover/map:translate-y-0 flex items-center gap-2 text-xs font-bold text-text-primary">
+                      <MapPin size={14} className="text-primary" /> Abrir en Google Maps
+                    </div>
+                  </div>
                   <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.55!2d-0.1825!3d38.9655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61e89222222222%3A0x2222222222222222!2sAv.%20de%20la%20Rep%C3%BAblica%20Argentina%2C%208%2C%2046702%20Gandia%2C%20Val%C3%A8ncia!5e0!3m2!1ses!2ses!4v1710000000000!5m2!1ses!2ses" 
                     width="100%" 
@@ -587,7 +603,7 @@ export default function App() {
                     allowFullScreen={true} 
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
-                    className="grayscale-[0.2] contrast-[1.1]"
+                    className="grayscale-[0.2] contrast-[1.1] pointer-events-none"
                   ></iframe>
                 </div>
               </div>
